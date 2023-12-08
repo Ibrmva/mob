@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/feature/presentation/blockpage.dart';
-import 'package:flutter_application_1/feature/presentation/success.dart';
 import 'package:flutter_application_1/feature/presentation/theme/app_fonts.dart';
 import 'package:flutter_application_1/feature/presentation/widgets/data.dart';
 import 'package:flutter_application_1/feature/presentation/widgets/sign_in_btn.dart';
@@ -99,7 +97,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                             ),
                             child: SignInBtn(
                               text: "Sign up",
-                              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => ListItemsPage()));},
+                              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const ListItemsPage()));},
                             )),
                       ],
                     ),

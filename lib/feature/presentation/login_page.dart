@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                           child: SignInBtn(text: "Sign in",
                             onPressed: () {},
                           )),
-                      SignUpBtn(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => RegistrationPage()));}),
+                      SignUpBtn(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const RegistrationPage()));}),
                       ForgotPassBtn(onPressed: () {}),
                     ],
                   ),

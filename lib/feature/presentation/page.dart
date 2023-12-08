@@ -101,7 +101,7 @@ class _CardsInfoState extends State<CardsInfo> {
             height: 168,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(24),
-                gradient: LinearGradient(colors: [Color.fromARGB(255, 25, 25, 25),Color(0xff50707B).withOpacity(0.25)],)),
+                gradient: LinearGradient(colors: [const Color.fromARGB(255, 25, 25, 25),const Color(0xff50707B).withOpacity(0.25)],)),
             child: Padding(
               padding: const EdgeInsets.only(
                   right: 13, left: 13, top: 13, bottom: 10),
