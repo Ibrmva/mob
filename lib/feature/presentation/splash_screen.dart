@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter_application_1/feature/presentation/login_page.dart';
-import 'package:flutter_application_1/feature/presentation/widgets/stack.dart';
+import 'package:flutter_application_1/feature/presentation/components/stack.dart';
 
 void main() {
   runApp(const WelcomePage());

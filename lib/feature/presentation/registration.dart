@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/feature/presentation/theme/app_fonts.dart';
-import 'package:flutter_application_1/feature/presentation/widgets/data.dart';
-import 'package:flutter_application_1/feature/presentation/widgets/sign_in_btn.dart';
-import 'package:flutter_application_1/feature/presentation/widgets/stack.dart';
+import 'package:flutter_application_1/feature/presentation/components/data.dart';
+import 'package:flutter_application_1/feature/presentation/components/sign_in_btn.dart';
+import 'package:flutter_application_1/feature/presentation/components/stack.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_application_1/feature/presentation/page.dart';
 
