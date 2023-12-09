@@ -56,14 +56,14 @@ class _ListItemsPageState extends State<ListItemsPage> {
         appBar: AppBar(
           title: const Text(
             "Hello",
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
+            style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w700),
           ),
         ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.only(top: 38),
             child: SizedBox(
-              width: 325,
+              width: 340,
               child: ListView.separated(itemBuilder: (context, index){
                 return CardsInfo(placeName: places[index], img: img[index], price: price[index],area: area[index],);
               }, separatorBuilder: (context, index){
@@ -101,7 +101,7 @@ class _CardsInfoState extends State<CardsInfo> {
             height: 168,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(24),
-                gradient: LinearGradient(colors: [const Color.fromARGB(255, 25, 25, 25),const Color(0xff50707B).withOpacity(0.25)],)),
+                gradient: LinearGradient(colors: [Color.fromARGB(255, 25, 25, 25),Color(0xff50707B).withOpacity(0.25)],)),
             child: Padding(
               padding: const EdgeInsets.only(
                   right: 13, left: 13, top: 13, bottom: 10),

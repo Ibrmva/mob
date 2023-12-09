@@ -4,7 +4,7 @@ import 'package:flutter_application_1/feature/presentation/widgets/data.dart';
 import 'package:flutter_application_1/feature/presentation/widgets/sign_in_btn.dart';
 import 'package:flutter_application_1/feature/presentation/widgets/stack.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'page.dart';
+import 'package:flutter_application_1/feature/presentation/page.dart';
 
 class RegistrationPage extends StatefulWidget {
   const RegistrationPage({super.key});
