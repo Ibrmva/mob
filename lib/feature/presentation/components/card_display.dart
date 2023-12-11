@@ -29,8 +29,8 @@ class _CardsInfoState extends State<CardsInfo> {
           borderRadius: BorderRadius.circular(24),
           gradient: LinearGradient(
             colors: [
-              Color.fromARGB(255, 25, 25, 25),
-              Color(0xff50707B).withOpacity(0.25)
+              const Color.fromARGB(255, 25, 25, 25),
+              const Color(0xff50707B).withOpacity(0.25)
             ],
           )),
       child: Padding(
