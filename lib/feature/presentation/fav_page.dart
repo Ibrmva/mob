@@ -26,6 +26,7 @@ class _FavPageState extends State<FavPage> {
                   img: img[index],
                   price: price[index],
                   area: area[index],
+                  customOnPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const Placeholder()));},
                 );
               },
               separatorBuilder: (context, index) {

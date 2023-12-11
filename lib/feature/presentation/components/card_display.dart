@@ -2,19 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/resources/resources.dart';
 import 'package:flutter_svg/svg.dart';
 
-
-
 class CardsInfo extends StatefulWidget {
+  final VoidCallback? customOnPressed;
   final String placeName;
   final String img;
   final String price;
   final String area;
-  const CardsInfo(
-      {super.key,
-      required this.placeName,
-      required this.img,
-      required this.price,
-      required this.area});
+  const CardsInfo({
+    super.key,
+    required this.placeName,
+    required this.img,
+    required this.price,
+    required this.area, 
+    this.customOnPressed,
+  });
 
   @override
   State<CardsInfo> createState() => _CardsInfoState();
@@ -115,7 +116,7 @@ class _CardsInfoState extends State<CardsInfo> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 IconButton(
-                    onPressed: () {},
+                    onPressed: widget.customOnPressed ?? () {},
                     icon: const Icon(
                       Icons.bookmark_border,
                       color: Colors.white,
