@@ -19,4 +19,11 @@ class Images {
   static const String image4 = 'assets/imgs/image4.png';
   static const String clock = 'assets/imgs/clock.svg';
   static const String location = 'assets/imgs/location.svg';
+  static const String image5 = 'assets/imgs/image5.png';
+  static const String image6 = 'assets/imgs/image6.png';
+  static const String image7 = 'assets/imgs/image7.png';
+  static const String image8 = 'assets/imgs/image8.png';
+  static const String image9 = 'assets/imgs/image9.png';
+  static const String image10 = 'assets/imgs/image10.png';
+  static const String image11 = 'assets/imgs/image11.png';
 }

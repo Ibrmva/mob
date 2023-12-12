@@ -8,9 +8,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ScreenUtilInit(
+    return ScreenUtilInit(
       designSize: Size(430, 932),
       child: MaterialApp(
+        theme: ThemeData(
+          scaffoldBackgroundColor: Colors.black
+        ),
         debugShowCheckedModeBanner: false,
         home: WelcomePage(),
       ),
