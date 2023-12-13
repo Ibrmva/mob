@@ -1,7 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/feature/presentation/components/new_sign_in_btn.dart';
+import 'package:flutter_application_1/feature/presentation/fav_page.dart';
 import 'package:flutter_application_1/feature/presentation/page.dart';
+import 'package:flutter_application_1/feature/presentation/signInPages/auth_page.dart';
 import 'package:flutter_application_1/feature/presentation/signInPages/registration.dart';
 import 'package:flutter_application_1/feature/presentation/components/stack.dart';
 import 'package:flutter_application_1/feature/presentation/theme/app_fonts.dart';
@@ -12,16 +14,26 @@ import 'package:flutter_application_1/feature/presentation/components/sign_up_bt
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginPage extends StatelessWidget {
-  LoginPage({super.key});
+  LoginPage({Key? key}) :super(key: key);
 
-  final email = TextEditingController();
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
 
-  final password = TextEditingController();
 
-  void signIn() async {
-    await FirebaseAuth.instance
-        .signInWithEmailAndPassword(email: email.text, password: password.text);
-  }
+
+
+  // Future signIn() async {
+  //   await FirebaseAuth.instance
+  //       .signInWithEmailAndPassword(email: _emailController.text, password: _emailController.text);
+  // }
+
+  // @override
+  // void dispose() {
+  //   _emailController.dispose();
+  //   _passwordController.dispose();
+  //   super.dispose();
+  // }
+
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +77,8 @@ class LoginPage extends StatelessWidget {
                                     color: Colors.black.withOpacity(0.6)),
                               ),
                             ),
-                            TextData(controller: email, obscureText: false),
+                            
+                            TextData(controller: _emailController, obscureText: false),
                             Padding(
                               padding:
                                   const EdgeInsets.only(top: 11, bottom: 6),
@@ -76,16 +89,30 @@ class LoginPage extends StatelessWidget {
                               ),
                             ),
                             TextData(
-                              controller: password,
+                              controller: _passwordController,
                               obscureText: true,
-                            )
+                            ),
                           ],
                         ),
                         Padding(
                             padding: const EdgeInsets.only(
                               top: 11,
                             ),
-                            child: MyButton(onTap: signIn)),
+                                                                            
+                            // child: MyButton(onTap: () {Navigator.push(context, MaterialPageRoute(builder:(context) => ListItemsPage()));AuthPage authPage = AuthPage();}),
+                            child: MyButton(onTap:() async {
+                              try {
+                                await FirebaseAuth.instance.signInWithEmailAndPassword(
+                                  email: _emailController.text,
+                                  password: _passwordController.text,
+                                );
+                                Navigator.push(context, MaterialPageRoute(builder:(context) => ListItemsPage()));AuthPage authPage = AuthPage();
+                              } catch (e){
+                                 print('Error signing in: $e');
+                              }
+                            }),
+                            ),
+   
                         SignUpBtn(onPressed: () {}),
                         ForgotPassBtn(onPressed: () {}),
                       ],

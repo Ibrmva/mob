@@ -21,7 +21,7 @@ class _WelcomePageState extends State<WelcomePage> {
   }
 
   void routing() {
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 5), () {
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => LoginPage()));
     });
