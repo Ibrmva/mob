@@ -30,10 +30,10 @@ class _FavPageState extends State<FavPage> {
           height: 10,
         ),
                 CardsInfo(
-          area: "Karakol, Issyk-Kol",
-          placeName: "Peak Karakol",
-          img: Images.image1,
-          price: "\$550",
+          area: "Ak-Sai Valley, Naryn",
+          placeName: "Kel Suu",
+          img: Images.image2,
+          price: "\$560",
           onPressed: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const Placeholder()));
@@ -43,10 +43,10 @@ class _FavPageState extends State<FavPage> {
           height: 10,
         ),
                 CardsInfo(
-          area: "Karakol, Issyk-Kol",
-          placeName: "Peak Karakol",
+          area: "Bosteri, Issyk-Kol",
+          placeName: "Maison",
           img: Images.image1,
-          price: "\$550",
+          price: "\$1,450",
           onPressed: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const Placeholder()));
@@ -56,10 +56,10 @@ class _FavPageState extends State<FavPage> {
           height: 10,
         ),
                 CardsInfo(
-          area: "Karakol, Issyk-Kol",
-          placeName: "Peak Karakol",
+          area: "Cholpon - Ata, Issyk-Kol",
+          placeName: "Olimp",
           img: Images.image1,
-          price: "\$550",
+          price: "\$1,590",
           onPressed: () {
             Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const Placeholder()));
@@ -70,53 +70,6 @@ class _FavPageState extends State<FavPage> {
         ),
       ]),
     );
-    // return Scaffold(
-    //   backgroundColor: Colors.black,
-    //   body: Center(
-    //       child: Padding(
-    //     padding: const EdgeInsets.only(top: 38),
-    //     child: SizedBox(
-    //       width: 340,
-    //       child: CardsInfo(
-    //         area: "Karakol, Issyk-Kol",
-    //         placeName: "Peak Karakol",
-    //         img: Images.image1,
-    //         price: "\$550",
-    //         onPressed: () {
-    //           Navigator.push(context,
-    //               MaterialPageRoute(builder: (context) => const Placeholder()));
-    //         },
-    //       ),
-    //       // child: ListView.separated(
-    //       //     itemBuilder: (context, index) {
-    //       //       return CardsInfo(
-    //       //         placeName: places[index],
-    //       //         img: img[index],
-    //       //         price: price[index],
-    //       //         area: area[index],
-    //       //         customOnPressed: () {
-    //       //           Navigator.push(
-    //       //               context,
-    //       //               MaterialPageRoute(
-    //       //                   builder: (context) => const Placeholder()));
-    //       //         },
-    //       //         onPressed: () {
-    //       //           Navigator.push(
-    //       //               context,
-    //       //               MaterialPageRoute(
-    //       //                   builder: (context) => const Placeholder()));
-    //       //         },
-    //       //       );
-    //       //     },
-    //       //     separatorBuilder: (context, index) {
-    //       //       return const SizedBox(
-    //       //         height: 14,
-    //       //       );
-    //       //     },
-    //       //     itemCount: places.length),
-    //     ),
-    //   )),
-    // );
   }
 }
 
