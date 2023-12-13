@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/feature/presentation/components/card_display.dart';
 import 'package:flutter_application_1/resources/resources.dart';
@@ -10,6 +11,7 @@ class FavPage extends StatefulWidget {
 }
 
 class _FavPageState extends State<FavPage> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

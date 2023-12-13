@@ -1,15 +1,17 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/feature/presentation/hotels.dart';
 import 'package:flutter_application_1/feature/presentation/fav_page.dart';
 
 class ListItemsPage extends StatefulWidget {
   const ListItemsPage({super.key});
-
+  
   @override
   State<ListItemsPage> createState() => _ListItemsPageState();
 }
 
 class _ListItemsPageState extends State<ListItemsPage> {
+  final user = FirebaseAuth.instance.currentUser!;
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
