@@ -21,7 +21,7 @@ class GuidesScreen extends StatelessWidget {
                   Row(
                     children: [
                       Image.asset(
-                        Images.image5,
+                        Images.image12,
                         width: 198,
                         height: 112,
                       ),
@@ -68,7 +68,7 @@ class GuidesScreen extends StatelessWidget {
                         style: TextStyle(color: Colors.white),
                       ),
                       Image.asset(
-                        Images.image6,
+                        Images.image13,
                         width: 211,
                         height: 112,
                       ),
@@ -101,7 +101,7 @@ class GuidesScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Image.asset(
-                        Images.image7,
+                        Images.image14,
                         width: 250,
                         height: 130,
                       ),
