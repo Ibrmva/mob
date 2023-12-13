@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/feature/presentation/theme/app_fonts.dart';
-import 'package:flutter_application_1/feature/presentation/components/data.dart';
-import 'package:flutter_application_1/feature/presentation/components/sign_in_btn.dart';
+import 'package:flutter_application_1/feature/presentation/components/text_field.dart';
+import 'package:flutter_application_1/feature/presentation/components/colored_btn.dart';
 import 'package:flutter_application_1/feature/presentation/components/stack.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_application_1/feature/presentation/page.dart';
@@ -58,7 +58,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                                     color: Colors.black.withOpacity(0.6)),
                               ),
                             ),
-                            TextData(controller: firstname),
+                            TextData(controller: firstname, obscureText: false,),
                             Padding(
                               padding:
                                   const EdgeInsets.only(top: 11, bottom: 6),
@@ -68,7 +68,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                                     color: Colors.black.withOpacity(0.6)),
                               ),
                             ),
-                            TextData(controller: lastname),
+                            TextData(controller: lastname, obscureText: false,),
                             Padding(
                               padding:
                                   const EdgeInsets.only(top: 11, bottom: 6),
@@ -78,7 +78,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                                     color: Colors.black.withOpacity(0.6)),
                               ),
                             ),
-                            TextData(controller: email),
+                            TextData(controller: email, obscureText: false,),
                             Padding(
                               padding:
                                   const EdgeInsets.only(top: 11, bottom: 6),
@@ -88,7 +88,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                                     color: Colors.black.withOpacity(0.6)),
                               ),
                             ),
-                            TextData(controller: password),
+                            TextData(controller: password, obscureText: false,),
                           ],
                         ),
                         Padding(
@@ -97,7 +97,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                             ),
                             child: SignInBtn(
                               text: "Sign up",
-                              onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const ListItemsPage()));},
+                              onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const ListItemsPage()));},
                             )),
                       ],
                     ),

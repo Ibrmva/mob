@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1008646625679",
+    "project_id": "auth-e4ddd",
+    "storage_bucket": "auth-e4ddd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008646625679:android:e7bf7dfabb03c21b5853fa",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4CQNBh0pbuL3FXgWx54Df3EyZgdyOZyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008646625679:android:cc5b0ec364505d285853fa",
+        "android_client_info": {
+          "package_name": "com.example.travel_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4CQNBh0pbuL3FXgWx54Df3EyZgdyOZyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

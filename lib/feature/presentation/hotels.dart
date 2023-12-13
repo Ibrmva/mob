@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_application_1/feature/presentation/components/list_btn.dart';
-import 'package:flutter_application_1/feature/presentation/components/sign_in_btn.dart';
+import 'package:flutter_application_1/feature/presentation/components/colored_btn.dart';
 import 'package:flutter_application_1/feature/presentation/fav_page.dart';
 import 'package:flutter_application_1/resources/resources.dart';
 import 'package:flutter_svg/svg.dart';
@@ -127,7 +127,7 @@ Have a good rest!""",
                 ),
                 Padding(
                     padding: const EdgeInsets.only(top: 11, right: 200),
-                    child: SignInBtn(onPressed: () {}, text: "Booking")),
+                    child: SignInBtn(onTap: () {}, text: "Booking")),
                 const SizedBox(
                   height: 17,
                 ),
