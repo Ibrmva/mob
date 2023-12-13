@@ -127,7 +127,7 @@ Have a good rest!""",
                 ),
                 Padding(
                     padding: const EdgeInsets.only(top: 11, right: 200),
-                    child: SignInBtn(onTap: () {}, text: "Booking")),
+                    child: ColoredBtn(onTap: () {}, text: "Booking")),
                 const SizedBox(
                   height: 17,
                 ),

@@ -3,6 +3,7 @@ import 'package:flutter_application_1/resources/resources.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CardsInfo extends StatefulWidget {
+    final Function() onPressed;
   final VoidCallback? customOnPressed;
   final String placeName;
   final String img;
@@ -13,7 +14,8 @@ class CardsInfo extends StatefulWidget {
     required this.placeName,
     required this.img,
     required this.price,
-    required this.area, 
+    required this.area,
+    required this.onPressed,
     this.customOnPressed,
   });
 
@@ -137,10 +139,13 @@ class _CardsInfoState extends State<CardsInfo> {
                             bottomLeft: Radius.zero,
                             topLeft: Radius.circular(12),
                             bottomRight: Radius.circular(16))),
-                    child: const Icon(
-                      Icons.arrow_right_alt,
-                      color: Colors.white,
-                    ),
+                    child: IconButton(
+                        onPressed: widget.onPressed,
+                        icon: const Icon(
+                          
+                          Icons.arrow_right_alt,
+                          color: Colors.white,
+                        )),
                   ),
                 ),
               ],

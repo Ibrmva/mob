@@ -95,7 +95,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                             padding: const EdgeInsets.only(
                               top: 25,
                             ),
-                            child: SignInBtn(
+                            child: ColoredBtn(
                               text: "Sign up",
                               onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const ListItemsPage()));},
                             )),

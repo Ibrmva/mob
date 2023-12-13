@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/feature/presentation/theme/app_fonts.dart';
 
-class SignInBtn extends StatelessWidget {
+class ColoredBtn extends StatelessWidget {
   final Function() onTap;
   final String text;
-  const SignInBtn({super.key, required this.onTap, required this.text});
+  const ColoredBtn({super.key, required this.onTap, required this.text});
 
   @override
   Widget build(BuildContext context) {

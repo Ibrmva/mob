@@ -14,30 +14,109 @@ class _FavPageState extends State<FavPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Center(
-          child: Padding(
-        padding: const EdgeInsets.only(top: 38),
-        child: SizedBox(
-          width: 340,
-          child: ListView.separated(
-              itemBuilder: (context, index) {
-                return CardsInfo(
-                  placeName: places[index],
-                  img: img[index],
-                  price: price[index],
-                  area: area[index],
-                  customOnPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const Placeholder()));},
-                );
-              },
-              separatorBuilder: (context, index) {
-                return const SizedBox(
-                  height: 14,
-                );
-              },
-              itemCount: places.length),
+      body: Column(mainAxisAlignment: MainAxisAlignment.center,
+       children: [
+        CardsInfo(
+          area: "Karakol, Issyk-Kol",
+          placeName: "Peak Karakol",
+          img: Images.image1,
+          price: "\$550",
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const Placeholder()));
+          },
         ),
-      )),
+        const SizedBox(
+          height: 10,
+        ),
+                CardsInfo(
+          area: "Karakol, Issyk-Kol",
+          placeName: "Peak Karakol",
+          img: Images.image1,
+          price: "\$550",
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const Placeholder()));
+          },
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+                CardsInfo(
+          area: "Karakol, Issyk-Kol",
+          placeName: "Peak Karakol",
+          img: Images.image1,
+          price: "\$550",
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const Placeholder()));
+          },
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+                CardsInfo(
+          area: "Karakol, Issyk-Kol",
+          placeName: "Peak Karakol",
+          img: Images.image1,
+          price: "\$550",
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const Placeholder()));
+          },
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+      ]),
     );
+    // return Scaffold(
+    //   backgroundColor: Colors.black,
+    //   body: Center(
+    //       child: Padding(
+    //     padding: const EdgeInsets.only(top: 38),
+    //     child: SizedBox(
+    //       width: 340,
+    //       child: CardsInfo(
+    //         area: "Karakol, Issyk-Kol",
+    //         placeName: "Peak Karakol",
+    //         img: Images.image1,
+    //         price: "\$550",
+    //         onPressed: () {
+    //           Navigator.push(context,
+    //               MaterialPageRoute(builder: (context) => const Placeholder()));
+    //         },
+    //       ),
+    //       // child: ListView.separated(
+    //       //     itemBuilder: (context, index) {
+    //       //       return CardsInfo(
+    //       //         placeName: places[index],
+    //       //         img: img[index],
+    //       //         price: price[index],
+    //       //         area: area[index],
+    //       //         customOnPressed: () {
+    //       //           Navigator.push(
+    //       //               context,
+    //       //               MaterialPageRoute(
+    //       //                   builder: (context) => const Placeholder()));
+    //       //         },
+    //       //         onPressed: () {
+    //       //           Navigator.push(
+    //       //               context,
+    //       //               MaterialPageRoute(
+    //       //                   builder: (context) => const Placeholder()));
+    //       //         },
+    //       //       );
+    //       //     },
+    //       //     separatorBuilder: (context, index) {
+    //       //       return const SizedBox(
+    //       //         height: 14,
+    //       //       );
+    //       //     },
+    //       //     itemCount: places.length),
+    //     ),
+    //   )),
+    // );
   }
 }
 
