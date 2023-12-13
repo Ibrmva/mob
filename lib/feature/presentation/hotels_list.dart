@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/feature/presentation/components/card_display_hotels.dart';
+import 'package:flutter_application_1/feature/presentation/components/card_display_hotels_list.dart';
 import 'package:flutter_application_1/resources/resources.dart';
 
-class FavPage extends StatefulWidget {
-  const FavPage({super.key});
+class HotelsList extends StatefulWidget {
+  const HotelsList({super.key});
 
   @override
-  State<FavPage> createState() => _FavPageState();
+  State<HotelsList> createState() => _HotelsListState();
 }
 
-class _FavPageState extends State<FavPage> {
+class _HotelsListState extends State<HotelsList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(mainAxisAlignment: MainAxisAlignment.center,
-       children: [
-        CardsInfo(
+      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        CardsInfoList(
           area: "Karakol, Issyk-Kol",
           placeName: "Peak Karakol",
           img: Images.image1,
@@ -29,7 +28,7 @@ class _FavPageState extends State<FavPage> {
         const SizedBox(
           height: 10,
         ),
-                CardsInfo(
+        CardsInfoList(
           area: "Ak-Sai Valley, Naryn",
           placeName: "Kel Suu",
           img: Images.image2,
@@ -42,7 +41,7 @@ class _FavPageState extends State<FavPage> {
         const SizedBox(
           height: 10,
         ),
-                CardsInfo(
+        CardsInfoList(
           area: "Bosteri, Issyk-Kol",
           placeName: "Maison",
           img: Images.image1,
@@ -55,7 +54,7 @@ class _FavPageState extends State<FavPage> {
         const SizedBox(
           height: 10,
         ),
-                CardsInfo(
+        CardsInfoList(
           area: "Cholpon - Ata, Issyk-Kol",
           placeName: "Olimp",
           img: Images.image1,

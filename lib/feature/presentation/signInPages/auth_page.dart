@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_application_1/feature/presentation/fav_page.dart';
-import 'package:flutter_application_1/feature/presentation/hotels.dart';
+import 'package:flutter_application_1/feature/presentation/hotels_info.dart';
 import 'package:flutter_application_1/feature/presentation/page.dart';
 import 'package:flutter_application_1/feature/presentation/signInPages/login_page.dart';
 import 'package:flutter_application_1/feature/presentation/splash_screen.dart';

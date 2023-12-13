@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/feature/presentation/hotels.dart';
+import 'package:flutter_application_1/feature/presentation/hotels_info.dart';
 import 'package:flutter_application_1/feature/presentation/fav_page.dart';
+import 'package:flutter_application_1/feature/presentation/hotels_list.dart';
 
 class ListItemsPage extends StatefulWidget {
   const ListItemsPage({super.key});
@@ -19,6 +20,8 @@ class _ListItemsPageState extends State<ListItemsPage> {
         page = const FavPage();
       case 1:
         page = const Hotels();
+      case 2:
+        page = const HotelsList();
       default:
         throw UnimplementedError('no widget for $selectedIndex');
     }
@@ -33,12 +36,16 @@ class _ListItemsPageState extends State<ListItemsPage> {
                   extended: constraints.maxWidth >= 1000,
                   destinations: const [
                     NavigationRailDestination(
-                      icon: Icon(Icons.favorite),
+                      icon: Icon(Icons.home),
                       label: Text('Favorites'),
                     ),
                     NavigationRailDestination(
                       icon: Icon(Icons.hotel),
                       label: Text('Hotels'),
+                    ),
+                    NavigationRailDestination(
+                      icon: Icon(Icons.favorite),
+                      label: Text('Favorites'),
                     ),
                   ],
                   selectedIndex: selectedIndex,
