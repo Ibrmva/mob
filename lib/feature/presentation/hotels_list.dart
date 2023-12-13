@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/feature/presentation/components/card_display_hotels_list.dart';
+import 'package:flutter_application_1/feature/presentation/guides_screen.dart';
 import 'package:flutter_application_1/resources/resources.dart';
 
 class HotelsList extends StatefulWidget {
@@ -22,7 +23,7 @@ class _HotelsListState extends State<HotelsList> {
           price: "\$550",
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const Placeholder()));
+                MaterialPageRoute(builder: (context) => const GuidesScreen()));
           },
         ),
         const SizedBox(
