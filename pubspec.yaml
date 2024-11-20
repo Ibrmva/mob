@@ -37,9 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_screenutil: ^5.9.0
   flutter_svg: ^2.0.9
-  firebase_auth: ^4.15.2
+  firebase_auth: ^4.16.0
   spider: ^4.2.2
-  firebase_core: ^2.24.2
+  firebase_core: ^2.15.0
 
 dev_dependencies:
   flutter_test:
